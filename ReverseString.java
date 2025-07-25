@@ -15,7 +15,9 @@ public class ReverseString {
 		}
 		System.out.println("looping type "+rev);
 	}
-	
+	public static String reverse3(String str){
+		return new StringBuilder(str).reverse().toString();
+	}
 	
 	
 	
@@ -24,6 +26,7 @@ public class ReverseString {
 		  String str="Hello World";
 		  ReverseString.reverse1(str);
 		  ReverseString.reverse2(str);
+		  System.out.println(ReverseString.reverse3(str));
 		  
 
 	}
